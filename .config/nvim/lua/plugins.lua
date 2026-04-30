@@ -26,6 +26,17 @@ vim.pack.add {
   -- nvim-tree
   { src = "https://github.com/nvim-tree/nvim-tree.lua" },
 
+  -- markview
+  { src = "https://github.com/OXY2DEV/markview.nvim" },
+
+  -- neogit
+  { src = "https://github.com/sindrets/diffview.nvim" },
+  { src = "https://github.com/m00qek/baleia.nvim" },
+  { src = "https://github.com/NeogitOrg/neogit" },
+
+  -- gitsigns
+  { src = "https://github.com/lewis6991/gitsigns.nvim" },
+
   -- catppuccin theme
   { src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
 }
