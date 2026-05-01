@@ -1,2 +1,0 @@
--- lualine
-require("lualine").setup {}

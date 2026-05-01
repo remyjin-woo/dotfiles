@@ -1,9 +1,5 @@
 local map = vim.keymap.set
 
--- set <leader> to <Space>
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 -- normal mode keymaps
 map("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
 map("n", "<leader>q", "<cmd>q<CR>", { desc = "Quit" })
