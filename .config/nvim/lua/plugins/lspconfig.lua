@@ -2,6 +2,7 @@ return {
   "neovim/nvim-lspconfig",
   event = "User FilePost",
   config = function()
+    -- lua_ls
     vim.lsp.config("lua_ls", {
       settings = {
         Lua = {
@@ -59,5 +60,6 @@ return {
     -- enable LSP servers
     vim.lsp.enable "rust_analyzer"
     vim.lsp.enable "lua_ls"
+    vim.lsp.enable "ty"
   end,
 }

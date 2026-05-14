@@ -7,20 +7,27 @@
     window-rule {
         match app-id="steam"
         exclude title=r#"^[Ss]team$"#
-        open-floating true
     }
 
     window-rule {
-       match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
-       default-floating-position x=10 y=10 relative-to="bottom-right"
-       open-focused false
+        match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+        default-floating-position x=10 y=10 relative-to="bottom-right"
+        open-focused false
     }
 
     window-rule {
-      match app-id="firefox"
-      // open-floating true
-      default-column-width { proportion 0.85; }
-      default-window-height { proportion 0.90; }
+        match app-id="firefox"
+        default-column-width { proportion 0.85; }
+        default-window-height { proportion 1.00; }
+
+    }
+
+    window-rule {
+        match app-id="kitty"
+        background-effect {
+            blur true
+        }
+
     }
 
     layer-rule {
