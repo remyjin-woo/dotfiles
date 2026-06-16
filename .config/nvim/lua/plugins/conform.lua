@@ -3,6 +3,10 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
+        html = { "prettier" },
+        css = { "prettier" },
+        scss = { "prettier" },
+        markdown = { "prettier" },
         lua = { "stylua" },
         python = {
           -- To fix auto-fixable lint errors.

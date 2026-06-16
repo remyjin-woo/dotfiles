@@ -9,6 +9,7 @@ require "config.keymaps"
 -- plugins
 require "config.lazy"
 
+-- enable background transparency
 vim.cmd [[
   highlight Normal guibg=none
   highlight NonText guibg=none
