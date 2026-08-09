@@ -27,7 +27,7 @@
     window-rule {
         match                               app-id="firefox"
         default-column-width {
-            proportion                      0.85
+            proportion                      0.95
         }
         default-window-height {
             proportion                      1.0

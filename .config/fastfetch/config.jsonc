@@ -25,6 +25,7 @@
     "localip",
     "battery",
     "locale",
+    "separator",
     "break"
   ],
   "display": {
