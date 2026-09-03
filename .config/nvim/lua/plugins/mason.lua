@@ -20,6 +20,8 @@ return {
         "stylua",
         "ruff",
         "ty",
+        "ts_ls",
+        "astro",
       },
     },
   },
