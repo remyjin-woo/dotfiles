@@ -4,9 +4,9 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
       options = {
-        theme = "ayu_dark",
+        theme = "auto",
         icons_enabled = true,
-        component_separators = { left = "", right = "" },
+        component_separators = "",
         section_separators = { left = "", right = "" },
       },
       sections = {
