@@ -1,0 +1,71 @@
+# Ayu Dark (modern) — matches ~/.config/kitty/ayu-dark.conf
+# Palette: ayu-theme/ayu-colors, npm "ayu" v9.1.0
+
+# Main background, empty for terminal default
+theme[main_bg]="#10141c"
+# Main text color
+theme[main_fg]="#bfbdb6"
+# Title color for boxes
+theme[title]="#bfbdb6"
+# Highlight color for keyboard shortcuts (ayu accent)
+theme[hi_fg]="#e6b450"
+# Selected item in processes box (kitty selection colors)
+theme[selected_bg]="#193155"
+theme[selected_fg]="#ffffff"
+# Inactive/disabled text
+theme[inactive_fg]="#5a6378"
+# Text on top of graphs
+theme[graph_text]="#bfbdb6"
+# Background of percentage meters
+theme[meter_bg]="#1b1f29"
+# Misc colors in processes box
+theme[proc_misc]="#59c2ff"
+
+# Box outlines
+theme[cpu_box]="#d2a6ff"
+theme[mem_box]="#95e6cb"
+theme[net_box]="#f07178"
+theme[proc_box]="#e6b450"
+# Box divider lines
+theme[div_line]="#5a6673"
+
+# Temperature graph: cool -> warm -> hot
+theme[temp_start]="#95e6cb"
+theme[temp_mid]="#ffb454"
+theme[temp_end]="#f07178"
+
+# CPU graph: low -> high load
+theme[cpu_start]="#aad94c"
+theme[cpu_mid]="#ffb454"
+theme[cpu_end]="#f07178"
+
+# Mem/Disk meters
+theme[free_start]="#97c142"
+theme[free_mid]="#aad94c"
+theme[free_end]="#aad94c"
+
+theme[cached_start]="#17acf2"
+theme[cached_mid]="#59c2ff"
+theme[cached_end]="#59c2ff"
+
+theme[available_start]="#84ceb5"
+theme[available_mid]="#95e6cb"
+theme[available_end]="#95e6cb"
+
+theme[used_start]="#e89d37"
+theme[used_mid]="#ffb454"
+theme[used_end]="#f07178"
+
+# Network graphs
+theme[download_start]="#e6495a"
+theme[download_mid]="#f07178"
+theme[download_end]="#f07178"
+
+theme[upload_start]="#17acf2"
+theme[upload_mid]="#59c2ff"
+theme[upload_end]="#59c2ff"
+
+# Process box gradient (threads, mem, cpu usage)
+theme[process_start]="#e6b450"
+theme[process_mid]="#ffb454"
+theme[process_end]="#f07178"
