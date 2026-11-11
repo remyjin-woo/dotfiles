@@ -23,6 +23,7 @@ return {
             horizontal = "right:60%",
           },
         },
+        fzf_colors = true, -- derive fzf colours from the colorscheme
         fzf_opts = {
           ["--info"] = "inline",
           ["--layout"] = "reverse",

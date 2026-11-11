@@ -12,7 +12,6 @@ return {
       "NeogitStatus",
       "NeogitLogView",
       "NvimTree",
-      "TelescopePrompt",
       "toggleterm",
     },
     modes_denylist = { "i" },
@@ -24,10 +23,12 @@ return {
   config = function(_, opts)
     require("illuminate").configure(opts)
 
+    local p = require "config.palette"
     local function apply()
-      vim.api.nvim_set_hl(0, "IlluminatedWordText", { underline = true, bold = true })
-      vim.api.nvim_set_hl(0, "IlluminatedWordRead", { underline = true, bold = true })
-      vim.api.nvim_set_hl(0, "IlluminatedWordWrite", { underline = true, bold = true })
+      local hl = { underline = true, sp = p.fg_muted }
+      vim.api.nvim_set_hl(0, "IlluminatedWordText", hl)
+      vim.api.nvim_set_hl(0, "IlluminatedWordRead", hl)
+      vim.api.nvim_set_hl(0, "IlluminatedWordWrite", hl)
     end
     apply()
     vim.api.nvim_create_autocmd("ColorScheme", { pattern = "*", callback = apply })

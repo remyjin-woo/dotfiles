@@ -3,6 +3,9 @@ return {
   version = false,
   event = "VeryLazy",
   config = function()
+    -- delete buffers without closing their window (keeps layout with nvim-tree open)
+    require("mini.bufremove").setup()
+
     require("mini.indentscope").setup {
       symbol = "│",
       options = { try_as_border = true },

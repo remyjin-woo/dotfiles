@@ -22,6 +22,7 @@ return {
         "ty",
         "ts_ls",
         "astro",
+        "prettier",
       },
     },
   },

@@ -15,32 +15,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
-vim.opt.laststatus = 3
-vim.opt.showmode = false
-vim.opt.splitkeep = "screen"
-
-vim.opt.clipboard = "unnamedplus"
-vim.opt.cursorline = true
-vim.opt.cursorlineopt = "number"
-
--- indenting
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
-vim.opt.smartindent = true
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-
--- numbers
-vim.opt.number = true
-vim.opt.numberwidth = 2
-vim.opt.ruler = false
-
 -- Setup lazy.nvim
 require("lazy").setup {
   spec = {
@@ -49,7 +23,7 @@ require("lazy").setup {
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "habamax" } },
+  install = { colorscheme = { "ayu-dark", "habamax" } },
   -- automatically check for plugin updates
   checker = { enabled = false },
 }

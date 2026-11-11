@@ -43,7 +43,6 @@ return {
 
     filters = {
       dotfiles = false, -- toggle with H
-      custom = { ".DS_Store" },
     },
 
     git = {

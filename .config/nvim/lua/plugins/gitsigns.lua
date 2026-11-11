@@ -52,9 +52,9 @@ return {
       end, "Prev hunk")
 
       -- actions
-      map({ "n", "v" }, "<leader>hs", gs.stage_hunk, "Stage hunk")
+      -- stage_hunk toggles: run it on a staged hunk to unstage it
+      map({ "n", "v" }, "<leader>hs", gs.stage_hunk, "Stage/unstage hunk")
       map({ "n", "v" }, "<leader>hr", gs.reset_hunk, "Reset hunk")
-      map("n", "<leader>hu", gs.undo_stage_hunk, "Undo stage hunk")
       map("n", "<leader>hp", gs.preview_hunk_inline, "Preview hunk inline")
       map("n", "<leader>hb", function()
         gs.blame_line { full = true }
