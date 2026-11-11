@@ -1,0 +1,38 @@
+# Custom ayu-dark, mirrored from kitty/ayu-dark.conf
+# keep in sync with kitty/fish/starship/nvim
+
+# Base
+foreground = #bfbdb6
+background = #10141c
+selection-foreground = cell-foreground
+selection-background = #193155
+
+# Cursor (ayu accent)
+cursor-color = #e6b450
+cursor-text = #10141c
+
+# ANSI colors (ayu terminal palette)
+# black
+palette = 0=#0a0000
+palette = 8=#5a6673
+# red
+palette = 1=#e6495a
+palette = 9=#f07178
+# green
+palette = 2=#97c142
+palette = 10=#aad94c
+# yellow
+palette = 3=#e89d37
+palette = 11=#ffb454
+# blue
+palette = 4=#17acf2
+palette = 12=#59c2ff
+# magenta
+palette = 5=#c385fe
+palette = 13=#d2a6ff
+# cyan
+palette = 6=#84ceb5
+palette = 14=#95e6cb
+# white
+palette = 7=#bfbdb6
+palette = 15=#ffffff
