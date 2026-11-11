@@ -1,0 +1,32 @@
+# name: 'Ayu Custom'
+# Matches the custom ayu-dark palette in kitty/btop/starship.
+
+fish_color_normal bfbdb6
+fish_color_command 59c2ff
+fish_color_keyword d2a6ff
+fish_color_quote aad94c
+fish_color_redirection 95e6cb
+fish_color_end ffb454
+fish_color_error f07178
+fish_color_param bfbdb6
+fish_color_valid_path --underline
+fish_color_option ffb454
+fish_color_comment 5a6673 --italics
+fish_color_operator 95e6cb
+fish_color_escape 95e6cb
+fish_color_autosuggestion 5a6673
+fish_color_selection --background=1a1f29
+fish_color_search_match --background=1a1f29
+fish_color_history_current --bold
+fish_color_cancel f07178 --reverse
+fish_color_cwd 59c2ff
+fish_color_cwd_root f07178
+fish_color_user aad94c
+fish_color_host 59c2ff
+fish_color_host_remote ffb454
+fish_color_status f07178
+fish_pager_color_progress 5a6673
+fish_pager_color_prefix ffb454 --bold
+fish_pager_color_completion bfbdb6
+fish_pager_color_description 5a6673 --italics
+fish_pager_color_selected_background --background=1a1f29
