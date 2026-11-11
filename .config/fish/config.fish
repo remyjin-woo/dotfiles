@@ -32,5 +32,8 @@ if status is-interactive
     # --- Inits ---
     zoxide init fish --cmd cd | source
     starship init fish | source
+    function starship_transient_prompt_func
+        starship module character
+    end
     enable_transience
 end

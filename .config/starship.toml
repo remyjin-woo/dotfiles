@@ -1,24 +1,72 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+palette = "ayu"
+add_newline = true
+format = """
+$os$username$hostname$directory$git_branch$git_state$git_status\
+$python$rust$nodejs$golang$lua$c\
+$fill$cmd_duration$jobs
+$character"""
+
+[palettes.ayu]
+fg = "#bfbdb6"
+mute = "#5a6673"
+blue = "#59c2ff"
+green = "#aad94c"
+yellow = "#ffb454"
+red = "#f07178"
+purple = "#d2a6ff"
+cyan = "#95e6cb"
+
+[os]
+disabled = false
+style = "blue"
+
+[fill]
+symbol = " "
+
 [directory]
-style = "bold #59C2FF"
+style = "bold blue"
+truncation_length = 4
+truncate_to_repo = false
 read_only = " 󰌾"
+read_only_style = "red"
 
 [git_branch]
 symbol = " "
-style = "bold #FAE3B0"
+style = "bold yellow"
 
 [git_status]
-style = "#F28779"
+format = "([$all_status$ahead_behind]($style) )"
+style = "red"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+
+[git_state]
+style = "purple"
 
 [username]
-style_user = "bold #91B362"
-style_root = "bold #F28779"
-show_always = true
+style_user = "bold green"
+style_root = "bold red"
 
 [hostname]
 ssh_symbol = " "
-style = "bold #59C2FF"
+style = "bold blue"
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
+
+[cmd_duration]
+min_time = 3000
+format = "[took $duration]($style) "
+style = "mute"
+
+[jobs]
+symbol = "✦ "
+style = "cyan"
 
 [aws]
 symbol = " "
